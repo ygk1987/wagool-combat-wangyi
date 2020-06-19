@@ -6,7 +6,10 @@
 
 <script>
 	export default {
-		
+		name:'CateList',
+		components: {
+
+		}
 	}
 </script>
 

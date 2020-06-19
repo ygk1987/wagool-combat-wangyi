@@ -4,7 +4,10 @@
 
 <script>
 export default {
-  name: '',
+  name: 'WorthBuying',
+  components:{
+    
+  },
 }
 </script>
 

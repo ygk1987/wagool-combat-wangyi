@@ -47,7 +47,11 @@
 </template>
 
 <script>
-	module.exports = {
+	export default {
+		name: 'Personal',
+		components:{
+			
+		},
 		data(){
 			return {
 				userInfo: {
