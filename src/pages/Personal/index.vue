@@ -104,7 +104,7 @@
 	}
 </script>
 
-<style lang="stylus" scoped>
+<style scoped lang="stylus" rel="stylesheet/stylus">
   .header
     display flex
     background url(//yanxuan.nosdn.127.net/5905098f74e04c39fa5e76ebb9ff591b.png?imageView&type=webp)
