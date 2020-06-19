@@ -8,9 +8,10 @@ import Personal from '@pages/Personal'
 export default[
 	{ //配置一个自动重定向的路由
 		path:'',
-		redirect: '/home'
+		redirect: '/Home'
 	},
 	{
+		name:Home,
 		path:"/home", 
 		component:Home,
 	},

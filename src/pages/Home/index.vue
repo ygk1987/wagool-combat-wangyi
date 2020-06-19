@@ -1,55 +1,103 @@
 <template>
-  <div id="indexContainer">
+  <div class="indexContainer">
     <!-- 头部 -->
-    <div class="header">
-      <img src="../../assets/images/logo.png" alt="" srcset="">
-      <div class="searchInput icon-sousuo">
-        <i class=""></i>
-        <input type="text" placeholder="搜索商品,共20008款好物">
+    <div class="header-wrap">
+      <div class="header">
+        <a href="/" class="logo">
+          <img src="../../assets/images/logo.png">
+        </a>
+        <div class="search">
+          <i class="iconfont icon-search"></i>
+          <span class="text">搜索商品, 共20008款好物</span>
+        </div>
+        <div class="login">登陆</div>
       </div>
-      <button>登录</button>
+      <div class="nav">
+        <div class="navItem active">推荐</div>
+        <div class="navItem">居家生活</div>
+        <div class="navItem">居家生活</div>
+        <div class="navItem">居家生活</div>
+        <div class="navItem more">↓</div>
+      </div>
     </div>
+    <!-- <Recommend/> -->
   </div>
 </template>
 
 <script>
+import {reqIndexData} from "../../api"
+// import Recommend from "@/components/Recommend"
 export default {
-  name: 'Home',
-	components:{
-		
-	}
-}
+  name:"Home",
+  components:{
+    // Recommend
+  },
+  data() {
+    return {
+
+    };
+  },
+  mounted() {
+
+  },
+  methods: {
+    toSearch(){
+      this.$router.push({path:'/search'})
+    }
+  },
+};
 </script>
 
-<style scoped lang="stylus" rel="stylesheet/stylus">
-  #indexContainer
-    .header
-    	display flex
-    	padding 10px 0
-    	image
-    		width 140px
-    		height 40px
-    		margin 10px 20px
-    	.searchInput
-    		position relative
-    		height 60px
-    		background #eee
-    		input
-    			margin-left 50px
-    		.placeholder
-    			font-size 26px
-    			text-align center
-    		.iconfont 
-    			position absolute
-    			left 10px
-    			top 25%
-    			font-size 30px
-    	button
-    		width 144px
-    		height 60px
-    		line-height 60px
-    		text-align center
-    		font-size 24px
-    		margin 0 10px
-    		color #b4282d
-</style>
+<style lang="stylus" scoped>
+  .indexContainer
+    background #fff
+    .header-wrap
+      .header
+        display flex  
+        margin 16px 30px
+        align-items center
+        .logo
+          display block
+          margin-right 20px
+          img
+            display block
+            width 138px
+            height 40px
+        .search
+          width 442px
+          height 56px
+          background #ededed
+          border-radius 8px
+          text-align center
+          line-height 56px  
+          .iconfont
+            font-size 28px
+            margin-right 10px 
+          .text
+            font-size 28px
+        .login
+          width 72px
+          height 38px
+          border 1px solid #DD1A21
+          color #DD1A21
+          line-height 38px
+          text-align center
+          margin-left 16px
+          border-radius 8px
+          font-size 24px
+      .nav
+        display flex
+        height 60px
+        padding-left 15px
+        .navItem
+          font-size 28px
+          line-height 60px
+          margin-left 20px
+          padding 0 16px
+          box-sizing border-box
+          &.active
+            color #BB2C08
+            border-bottom 4px solid #BB2C08
+    .test
+      height 97px
+</style>  
