@@ -10,27 +10,27 @@
           <i class="iconfont icon-search"></i>
           <span class="text">搜索商品, 共20008款好物</span>
         </div>
-        <div class="login">登陆</div>
+        <div class="login">登录</div>
       </div>
       <div class="nav">
         <div class="navItem active">推荐</div>
         <div class="navItem">居家生活</div>
         <div class="navItem">居家生活</div>
         <div class="navItem">居家生活</div>
-        <div class="navItem more">↓</div>
+        <div class="navItem more">更多</div>
       </div>
     </div>
-    <!-- <Recommend/> -->
+    <Recommend/>
   </div>
 </template>
 
 <script>
 import {reqIndexData} from "../../api"
-// import Recommend from "@/components/Recommend"
+import Recommend from "@/components/Recommend"
 export default {
   name:"Home",
   components:{
-    // Recommend
+    Recommend
   },
   data() {
     return {
