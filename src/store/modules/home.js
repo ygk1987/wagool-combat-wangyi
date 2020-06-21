@@ -14,7 +14,7 @@ const mutations = {
 const actions = {
   async getIndexData({commit}){
     const res = await reqIndexData()
-    console.log(res);
+    // console.log(res);
     commit(GETINDEXDATAMUTATION, res);
   }
 }

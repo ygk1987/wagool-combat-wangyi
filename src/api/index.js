@@ -10,8 +10,8 @@ import ajax from './ajax'
 export const reqIndexData = () => ajax.get('/getIndexData')
 //请求主页导航的数据接口
 export const reqIndexCateData = () => ajax.get('/getIndexCateData')
-//分类左侧导航数据
-export const reqCateNavData = () => ajax.get('/getCateNavData')
+//分类导航的数据接口
+export const reqCateNavListData = () => ajax.get('/getCateGoryDatas')
 //分类右侧导航数据
 export const reqCateListsData = () => ajax.get('/getCateListsData')
 
