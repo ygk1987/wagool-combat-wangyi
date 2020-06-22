@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="buyContainer">
     <Header title="值得购买"/>
   </div>
 </template>
@@ -15,6 +15,8 @@ export default {
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-
+  #buyContainer
+    height 100%
+    
 </style>
 

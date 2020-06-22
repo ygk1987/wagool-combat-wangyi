@@ -6,11 +6,11 @@
         <a href="/" class="logo">
           <img src="../../assets/images/logo.png">
         </a>
-        <div class="search">
+        <div class="search" @click="toSearch">
           <i class="iconfont icon-search"></i>
           <span class="text">搜索商品, 共20008款好物</span>
         </div>
-        <div class="login">登录</div>
+        <div class="login" @click="toLogin">登录</div>
       </div>
       <div class="nav">
         <div class="navItem active">推荐</div>
@@ -43,6 +43,9 @@ export default {
   methods: {
     toSearch(){
       this.$router.push({path:'/search'})
+    },
+    toLogin(){
+      this.$router.push({path:'/login'})
     }
   },
 };
