@@ -17,8 +17,9 @@ export default {
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
 	#app
-		margin-bottom 97px
+		margin-bottom 100px
 		width 100%
 		height 100%
 		background #eee
+	
 </style>
